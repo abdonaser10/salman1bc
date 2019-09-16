@@ -79,7 +79,7 @@ client.on('ready',  () => {
    }
    });
 
-const developers = ["608671182446919690"]
+const developers = ["619182018776793113"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -99,7 +99,7 @@ client.on('message', message => {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 'sets')) {
+  if (message.content.startsWith(adminprefix + 'set')) {
     client.user.setGame(argresult, "https://www.twitch.tv/dream");
       message.channel.send(`**✅**`)
   }
